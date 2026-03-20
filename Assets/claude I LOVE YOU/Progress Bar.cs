@@ -6,12 +6,12 @@ public class ProgressBar : MonoBehaviour
 {
     public Slider progressSlider;  // drag your Slider here in the Inspector
     public float maxValue = 100f;
-    private float currentValue;
+    public float currentValue;
 
 
     void Start()
     {
-        currentValue = maxValue;
+        currentValue = 0;
         progressSlider.maxValue = maxValue;
         progressSlider.value = currentValue;
     }
